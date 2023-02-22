@@ -28,7 +28,7 @@ function chkwin(){
             document.querySelector('.turnbox span').innerText= boxtext[e[0]].innerText + " Won";
             temp=1;
             document.querySelector('.gameInfo img').style.width="300px";
-            document.querySelector('.gameInfo img').style.translate="200px";
+
             win.play();
         }
     });
@@ -56,6 +56,7 @@ reset.addEventListener('click',() => {
     })
     resetsound.play();
     turn="X";
+    temp=0;
     document.querySelector('.turnbox span').innerText="Turn for "+ turn;
     document.querySelector('.gameInfo img').style.width="0px";
     document.querySelector('.gameInfo img').style.translate="0px";
